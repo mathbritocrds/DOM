@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header,
+section,
+footer {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.destaque {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Classe alternada pelo classList.toggle no JavaScript */
+.ativo {
+  background-color: #ffeaa7;
+  border-left: 4px solid #fdcb6e;
+  padding: 8px;
+}
+
+.container-caixas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.caixa {
+  flex: 1 1 180px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  width: auto;
+  cursor: pointer;
+  border: 1px solid #0056b3;
+  border-radius: 5px;
+  background: #0056b3;
+  color: #fff;
+}
+
+button:hover {
+  background: #003f83;
+}
+
+.imagem-exemplo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.tabela-responsiva {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+#mensagem-formulario {
+  margin: 0;
+  color: #176b35;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 15px;
+  }
+}
